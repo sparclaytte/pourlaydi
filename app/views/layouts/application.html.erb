@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SiteOfficielSimplonve</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width"> 
+</head>
+<body>
+<ul class="navigationve">
+	<li class="navigationve-link"><%= link_to 'Accueil', root_path %></li>
+	<li class="navigationve-link"><%= link_to 'Blog', articles_path %></li>
+	<li class="navigationve-link"><%= link_to 'Intervenants', intervenants_path %></li>
+</ul>
+
+
+<%= yield %>
+
+</body>
+<%= render "layouts/footer" %>
+</html>
